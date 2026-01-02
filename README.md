@@ -1,8 +1,7 @@
 # Python CI Pipeline with GitHub Actions
 [![Python CI](https://github.com/ashirwads/CICD/actions/workflows/ci.yml/badge.svg)](https://github.com/ashirwads/CICD/actions/workflows/ci.yml)
 
-This project demonstrates a simple and practical **Continuous Integration (CI) pipeline** using **GitHub Actions** for a Python application.
-
+This project demonstrates a simple and practical **Continuous Integration (CI) pipeline** using **GitHub Actions** for a Python application.  
 The pipeline automatically runs tests whenever code is pushed to the repository or a pull request is created.
 
 ---
@@ -28,7 +27,7 @@ The pipeline automatically runs tests whenever code is pushed to the repository 
 ---
 
 ## 📂 Project Structure
-
+.
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
@@ -52,27 +51,18 @@ The pipeline automatically runs tests whenever code is pushed to the repository 
 ## 🧪 Run Tests Locally
 
 ```bash
+# Create a virtual environment
 python -m venv venv
-source venv/bin/activate
+
+# Activate the virtual environment
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run tests
 pytest
 
-
-
-
 ✅ CI Status
-
-The CI pipeline runs automatically on every push to validate the code.
-
-
----
-
-## ✅ What to do now (important)
-
-1️⃣ Save the file  
-2️⃣ Commit & push:
-
-```bash
-git add README.md
-git commit -m "Update README with project details"
-git push
+The CI pipeline runs automatically on every push and pull request to validate the code.
+Check the status at the badge above.
