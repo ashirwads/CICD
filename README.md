@@ -30,14 +30,13 @@ The pipeline automatically runs tests whenever code is pushed to the repository 
 ## 📂 Project Structure
 
 ├── .github/
-│ └── workflows/
-│ └── ci.yml
+ │ └── workflows/
+      └── ci.yml
+
 ├── calculator.py
 ├── test_calculator.py
 ├── requirements.txt
 └── README.md
-
-
 ---
 
 ## ⚙️ How the CI Pipeline Works
